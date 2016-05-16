@@ -47,7 +47,7 @@
                     <input  placeholder="Email"
                             type="email"
                             name="email"
-                            
+                            ng-required="true"
                             ng-model="reg.user.email" />
                             <p class="error validationerror" ng-show="myform.email.$touched && myform.email.$invalid">
                               You must fill out Valid Email Address.
@@ -59,7 +59,7 @@
                             name="password"
                             ng-model="reg.user.password"
                             ng-minlength="6" />
-                            <p class="error validationerror" ng-show="myform.password.$touched && myform.password.$invalid && myform.passw">
+                            <p class="error validationerror" ng-show="myform.password.$touched && myform.password.$invalid">
                               Your Password must be atleast 6 characters!.
                             </p>
                             <br />
